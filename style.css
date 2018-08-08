@@ -18,6 +18,7 @@ a{
 
 a:hover{
     color: rgb(84, 208, 221);
+    transition: all 0.5s;
 }
 
 li{
@@ -117,8 +118,8 @@ li{
 }
 
 .about{
-    width: 100%;
     padding: 120px 0;
+    width: 100%;
     background-color: #54d0dd;
     display: flex;
 }
@@ -214,3 +215,86 @@ li{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    padding: 120px 0 60px 0;
+    width: 100%;
+    background-color: #54d0dd;
+    display: flex;
+    font-size: 14px;
+}
+
+.contact__form{
+    display: flex;
+}
+
+.contact__form__name{
+    padding-right: 15px;
+}
+
+.contact__form__email{
+    padding-left: 15px;
+}
+
+.help__block{
+    padding-top: 7px;
+}
+
+.input__form{
+    width: 350px;
+    display: block;
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #222;
+    background-color: rgba(255,255,255,0.8);
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    min-height: 1px;
+}
+
+.contact__form__message{
+    margin-bottom: 15px;
+}
+
+#message {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 6px 15px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #222;
+    background-color: rgba(255,255,255,0.8);
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-family: inherit;
+}
+
+.footer__container{
+    background: #343b42;
+    color: rgba(255,255,255,0.4);
+    padding: 30px 0 25px 0;
+    font-size: 14px;
+    text-align: center;
+}
