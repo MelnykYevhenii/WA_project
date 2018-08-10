@@ -78,13 +78,13 @@ li{
     width: 100%;
 }
 
-.homepage_text{
+.homepage__text{
     position: absolute;
     text-align: center;
     align-self: center;
 }
 
-.homepage_text h1{
+.homepage__text h1{
     color: rgba(255,255,255,0.9);
     font-size: 64px;
     font-weight: 600;
@@ -92,7 +92,7 @@ li{
     margin-bottom: 20px;
 }
 
-.homepage_text p{
+.homepage__text p{
     font-size: 22px;
     color: rgba(255,255,255,0.8);
     margin-bottom: 40px;
@@ -213,9 +213,14 @@ li{
     background-color: #343b42;
 }
 
+.portfolio{
+    padding: 120px 0;
+    background-color: #414a52;
+}
 
-
-
+.portfolio h2{
+    color: #54d0dd;
+}
 
 
 
