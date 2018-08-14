@@ -18,8 +18,8 @@
  height: 42px;
 }
 
-.go-up { bottom: 60px; }
-.go-down { bottom: 10px; }
+.go-up { bottom: 65px; }
+.go-down { bottom: 15px; }
 .go-down:hover,
 .go-up:hover {
  opacity: 1;
