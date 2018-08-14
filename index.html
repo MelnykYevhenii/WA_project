@@ -27,7 +27,7 @@
         <div class="homepage__text">
             <h1 id="homepage">SPECTRUM</h1>
             <p>Web Design • Photography • Product Design</p>
-            <a href="#about" class="btn">LEARN MORE</a>
+            <a href="#about" class="btn" data-target = "anchor">LEARN MORE</a>
         </div>
     </div>
 
@@ -46,7 +46,7 @@
                 <div class="about__container__righttext__text">
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                    <a href="#portfolio" class="portfolio_btn">MY PORTFOLIO</a>
+                    <a href="#portfolio" class="portfolio_btn" data-target = "anchor">MY PORTFOLIO</a>
                 </div>
 
             </div>
@@ -71,47 +71,41 @@
     </div>
 
     <div class="contact">
-            <div class="container container__contacts">
+            <div class="container__contacts">
                 <div class="about__container__text getintouch__title">
                     <h2 id="contact">Get In Touch</h2>
                     <hr>
                 </div>
-        
+                    <form name="sentMessage" id="contactForm">
                     <div class="contact__form">
-                        <div class="send__name">
-                            <div class="contact__form__name">
-                                <input type="text" class = "input__form input__name" placeholder="Name" required="required">
-                                
-                                <p class = "help__block">
-                                    <ul>
-                                        <li>This is required</li>
-                                    </ul>
-                                </p>
+                            <div class="send__name">
+                                <div class="contact__form__name">
+                                    <input type="text" class = "input__form input__name" placeholder="Name" required="required">
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="send__email">
-                            <div class="contact__form__email">
-                                <input type="text" class = "input__form input__email" placeholder="Email" required="required">
                             
-                                <p class = "help__block">
-                                    <ul>
-                                        <li>This is required</li>
-                                    </ul>
-                                </p>
+                            <div class="send__email">
+                                <div class="contact__form__email">
+                                    <input type="text" class = "input__form input__email" placeholder="Email" required="required">
+                                </div>
                             </div>
-                        </div>
+                    </div>
+                    <div class="contact__form__message">
+                        <textarea name="message" id="message" rows="4" placeholder="Write a message" required="required"></textarea>
 
-                </div>
+                        <button type="submit" class="submit__btn">SEND MESSAGE</button>
+                    </div>
+                
+                </form>
 
-                <div class="contact__form__message">
-                    <textarea name="message" id="message" rows="4"></textarea>
-
-                    <p class = "help__block">
-                        <ul>
-                            <li>Write a message</li>
-                        </ul>
-                    </p>
+                <div class="social">
+                    <ul class = "socialIcons">
+                        <li><a href="#" class="facebook"><i class="fa fa-facebook "></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
                 </div>
 
             </div>

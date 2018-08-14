@@ -110,6 +110,7 @@ li{
     border-radius: 0;
     margin-top: 20px;
     transition: all 0.3s;
+    border-radius: 5px;
 }
 
 .btn:hover{
@@ -206,6 +207,7 @@ li{
     border-radius: 0;
     margin-top: 20px;
     transition: all 0.3s;
+    border-radius: 5px;
 }
 
 .portfolio_btn:hover{
@@ -236,10 +238,13 @@ li{
 
 
 
-
+.container__contacts{
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .contact{
-    padding: 120px 0 60px 0;
+    padding: 120px 0 120px 0;
     width: 100%;
     background-color: #54d0dd;
     display: flex;
@@ -250,16 +255,16 @@ li{
     display: flex;
 }
 
+#contactForm{
+    width: 100%;
+}
+
 .contact__form__name{
     padding-right: 15px;
 }
 
 .contact__form__email{
     padding-left: 15px;
-}
-
-.help__block{
-    padding-top: 7px;
 }
 
 .input__form{
@@ -278,23 +283,51 @@ li{
 }
 
 .contact__form__message{
-    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #message {
     display: block;
     width: 100%;
     margin-top: 15px;
-    padding: 6px 15px;
     font-size: 14px;
-    line-height: 1.42857143;
+    line-height: 1.4;
     color: #222;
     background-color: rgba(255,255,255,0.8);
     background-image: none;
     border: 1px solid transparent;
-    border-radius: 0;
+    border-radius: 5px;
     font-family: inherit;
 }
+
+.submit__btn{
+    color: #54d0dd;
+    background-color: #414a52;
+    border: 0;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.submit__btn:hover{
+    color: #54d0dd;
+    background-color: #343b42;
+    cursor: pointer;
+}
+
+.social{
+    margin-top: 80px;
+}
+
+/* ИКОНКИ СОЦ СЕТЕЙ */
+
+
+
+/* ИКОНКИ СОЦ СЕТЕЙ */
 
 .footer__container{
     background: #343b42;
@@ -303,3 +336,4 @@ li{
     font-size: 14px;
     text-align: center;
 }
+
