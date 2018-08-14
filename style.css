@@ -1,3 +1,4 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 *{
     margin: 0;
     padding: 0;
@@ -244,7 +245,7 @@ li{
 }
 
 .contact{
-    padding: 120px 0 120px 0;
+    padding: 120px 0 60px 0;
     width: 100%;
     background-color: #54d0dd;
     display: flex;
@@ -321,12 +322,32 @@ li{
 
 .social{
     margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 /* ИКОНКИ СОЦ СЕТЕЙ */
 
 
-
+.social a{
+    width:30px;
+    height:30px;
+    background:#fff;
+    border:1px solid #ccc;
+    box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius:46px;
+    margin:0 10px 10px 0;
+    padding:6px;
+    color:#000;
+}
+.instagram a:hover{background-color: #3f729b;color:rgb(250, 113, 64);}
+.facebook a:hover{background:#3b5998;color:#fff;}
+.twitter a:hover{background:#00acee;color:#fff;}
+.google-pluse a:hover{background:#DD4B39;color:#fff;}
+.linkedin a:hover{background:#0e76a8;color:#fff;}
+.telegram a:hover{background:#249bd7;color:#fff;}
+.github a:hover{background:#191919;color:#fff;}
 /* ИКОНКИ СОЦ СЕТЕЙ */
 
 .footer__container{
