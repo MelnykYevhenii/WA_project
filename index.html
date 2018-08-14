@@ -7,11 +7,11 @@
     <title>project</title>
     <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'> -->
+    <link rel="stylesheet" href="up_down.css">
 </head>
 <body>
     <header class = "header">
-        <a href="#" class = "logo">SPECTRUM</a>
+        <a href="#homepage_top" id = "homepage_top" data-target = "anchor" class = "logo">SPECTRUM</a>
 
         <nav class="menu">
             <ul>
@@ -77,7 +77,7 @@
                     <h2 id="contact">Get In Touch</h2>
                     <hr>
                 </div>
-                    <form name="sentMessage" id="contactForm">
+                <form name="sentMessage" id="contactForm">
                     <div class="contact__form">
                             <div class="send__name">
                                 <div class="contact__form__name">
@@ -101,95 +101,64 @@
 
                 <div class="social">
                         <div class = "instagram">
-                            <a href="#">
+                            <a href="#homepage_top" data-target = "anchor">
                                 <i class="fa fa-instagram fa-2x"></i>
                             </a>
                         </div>
 
                         <div class = "facebook">
-                            <a href="#">
+                            <a href="#homepage_top" data-target = "anchor">
                                 <i class="fa fa-facebook fa-2x"></i>
                             </a>
                         </div>
 
                         <div class = "twitter">
-                            <a href="#">
+                            <a href="#homepage_top" data-target = "anchor">
                                 <i class="fa fa-twitter fa-2x"></i>
                             </a>
                         </div>
 
                         <div class = "google-pluse">
-                            <a href="#">
+                            <a href="#homepage_top" data-target = "anchor">
                                 <i class="fa fa-google-plus fa-2x"></i>
                             </a>
                         </div>
 
                         <div class = "linkedin">
-                            <a href="#">
+                            <a href="#homepage_top" data-target = "anchor">
                                 <i class="fa fa-linkedin fa-2x"></i>
                             </a>
                         </div>
 
                         <div class = "telegram">
-                            <a href="#">
+                            <a href="#homepage_top" data-target = "anchor">
                                 <i class="fa fa-paper-plane fa-2x"></i>
                             </a>
                         </div>
 
                         <div class = "github">
-                            <a href="#">
+                            <a href="#homepage_top" data-target = "anchor">
                                 <i class="fa fa-github fa-2x"></i>
                             </a>
                         </div>
                 </div>
-
-            </div>
-                
+            </div>        
     </div>
 
     <footer>
         <div class="footer__container">
             <p>Copyright © 2018 Spectrum. Designed by Melnyk Yevhenii
-            <a href="http://www.templatewire.com">TemplateWire</a>
+                <a href="#homepage_top" data-target = "anchor">TemplateWire</a>
             </p>
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="go-up" title="Вверх" id='ToTop'>⇧</div>
+    <div class="go-down" title="Вниз" id='OnBottom'>⇩</div>
 
 
     <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="scripts/scrolling.js"></script>
+    <script type="text/javascript" src="scripts/up_down.js"></script>
 </body>
 </html>
