@@ -223,9 +223,29 @@ li{
     color: #54d0dd;
 }
 
+.categories__type{
+    display: flex;
+    justify-content: space-between;
+}
 
+.portfolio__btn__photo{
+    display: inline-block;
+    color: #54d0dd;
+    background-color: #414a52;
+    border: 0;
+    padding: 14px 20px;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 0;
+    margin-top: 20px;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
 
-
+.portfolio__btn__photo:hover{
+    color: #343b42;
+    background-color: #54d0dd;
+}
 
 
 
@@ -307,7 +327,7 @@ li{
     padding: 14px 20px;
     font-size: 16px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
     transition: all 0.3s;
 }
 
