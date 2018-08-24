@@ -76,6 +76,7 @@ li{
 }
 
 .homepage{
+    width: 100%;
     display: flex;
     background: url(./img/intro-bg.jpg) no-repeat center;
     background-size: cover;
@@ -91,6 +92,7 @@ li{
     position: absolute;
     text-align: center;
     align-self: center;
+    width: 100%;
 }
 
 .homepage__text h1{
@@ -135,6 +137,7 @@ li{
 }
 
 .container{
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -161,6 +164,7 @@ li{
 
 .about__container__text{
     text-align: center;
+    width: 100%;
 }
 
 .about__container__text h2{
@@ -183,17 +187,51 @@ li{
 }
 
 .about__container{
-    margin-right: -15px;
-    margin-left: -15px;
+    width: 100%;
     display: flex;
+}
+@media(max-width: 850px){
+    .about__container{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 690px){
+    .about__container{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 590px){
+    .about__container{
+        flex-wrap: wrap;
+    }
+    .about__container__righttext__text p{
+        white-space: pre;
+    }
+
+    .about__container__text{
+        text-align: left;
+    }
+
+    .about__container__text hr{
+        display: none;
+    }
+
+    .about__container__photo img{
+        width: 250px;
+        height: 200px;
+    }
 }
 
 .about__container__photo{
     padding-right: 15px;
+    width: 100%;
 }
 
 .about__container__righttext__text{
-    padding-left: 20px;
+    width: 100%;
+    /* padding-left: 20px; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -242,6 +280,17 @@ li{
     justify-content: center;
 }
 
+@media(max-width: 590px){
+    .categories{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__container__text{
+        text-align: center;
+    }
+}
+
 .portfolio__btn__photo{
     display: inline-block;
     color: #54d0dd;
@@ -266,7 +315,7 @@ li{
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: stretch;
     margin-left: 25px;
     margin-right: 25px;
@@ -276,7 +325,7 @@ li{
     flex: 0 0 25%; /* не меняют размер, и в строке 4 фото */
     height: 0;
     padding-top: 12.5%;
-
+    
     transition: all .5s ease-in;
     opacity: 1;
 }
@@ -303,6 +352,7 @@ li{
     left: 0;
     position: absolute;
     object-fit: cover;    
+    display: block;
 }
 
 .project__description{
@@ -319,9 +369,9 @@ li{
 }
 
 .container__contacts{
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
 }
+
 
 .contact{
     padding: 120px 0 60px 0;
@@ -339,18 +389,13 @@ li{
     width: 100%;
 }
 
-.contact__form__name{
-    padding-right: 15px;
-}
-
-.contact__form__email{
-    padding-left: 15px;
+.send__name{
+    padding-right: 10px;
 }
 
 .input__form{
     width: 350px;
     height: 40px;
-    padding: 6px 12px;
     font-size: 16px;
     line-height: 1.5;
     color: #222;
@@ -359,6 +404,31 @@ li{
     border: 1px solid transparent;
     border-radius: 5px;
     min-height: 1px;
+}
+
+
+@media(max-width: 755px){
+    .input__form{
+        width: auto;
+    }
+
+    .contact__form{
+        flex-wrap: wrap;
+    }
+
+    .send__name{
+        padding-bottom: 10px;
+        padding-left: 5px;
+    }
+    
+    .send__email{
+        padding-left: 5px;
+    }
+
+    .contact__form__message{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 .contact__form__message{
@@ -403,6 +473,12 @@ li{
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+@media(max-width: 590px){
+    .social{
+        flex-direction: column;
+    }
 }
 
 /* ИКОНКИ СОЦ СЕТЕЙ */
