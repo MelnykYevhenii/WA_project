@@ -8,11 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="up_down.css">
+    <link rel="stylesheet" href="simplebox.css">
 </head>
 <body>
     <header class = "header">
         <a href="#homepage_top" id = "homepage_top" data-target = "anchor" class = "logo">SPECTRUM</a>
-
+        
         <nav class="menu">
             <ul>
                 <li><a href="#homepage" data-target = "anchor">HOME</a></li>
@@ -82,76 +83,64 @@ commodo nibh.</p>
 
             <div class="gallery">
                 <div class="photo" data-group = "ALL web--design">
-                    <img src="img/01-small.jpg" alt="phone" class="project__image">
-                        <div class="project__description">
-                            phone
-                        </div>
+                    <a rel = "simplebox" href="img/01-large.jpg">
+                        <img src="img/01-small.jpg" alt="phone" class="project__image">
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL prod--design">
+                    <a rel = "simplebox" href="img/02-large.jpg">
                         <img src="img/02-small.jpg" alt="mouse" class="project__image">
-                        <div class="project__description">
-                            mouse
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL  web--design">
+                    <a rel = "simplebox" href="img/03-large.jpg">
                         <img src="img/03-small.jpg" alt="3" class="project__image">
-                        <div class="project__description">
-                            03
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL web--design">
+                    <a rel = "simplebox" href="img/04-large.jpg">
                         <img src="img/04-small.jpg" alt="4" class="project__image">
-                        <div class="project__description">
-                            04
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL prod--design">
+                    <a rel = "simplebox" href="img/05-large.jpg">
                         <img src="img/05-small.jpg" alt="5" class="project__image">
-                        <div class="project__description">
-                            05
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL photo">
+                    <a rel = "simplebox" href="img/06-large.jpg">
                         <img src="img/06-small.jpg" alt="6" class="project__image">
-                        <div class="project__description">
-                            06
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL photo">
+                    <a rel = "simplebox" href="img/07-large.jpg">
                         <img src="img/07-small.jpg" alt="7" class="project__image">
-                        <div class="project__description">
-                            07
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL web--design">
+                    <a rel = "simplebox" href="img/08-large.jpg">
                         <img src="img/08-small.jpg" alt="8" class="project__image">
-                        <div class="project__description">
-                            08
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL prod--design">
+                    <a rel = "simplebox" href="img/09-large.jpg">
                         <img src="img/09-small.jpg" alt="9" class="project__image">
-                        <div class="project__description">
-                            09
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL photo">
+                    <a rel = "simplebox" href="img/10-large.jpg">
                         <img src="img/10-small.jpg" alt="10" class="project__image">
-                        <div class="project__description">
-                            10
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL photo">
+                    <a rel = "simplebox" href="img/11-large.jpg">
                         <img src="img/11-small.jpg" alt="11" class="project__image">
-                        <div class="project__description">
-                            11
-                        </div>
+                    </a>
                 </div>
                 <div class="photo" data-group = "ALL web--design">
+                    <a rel = "simplebox" href="img/12-large.jpg">
                         <img src="img/12-small.jpg" alt="12" class="project__image">
-                        <div class="project__description">
-                            12
-                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -248,5 +237,21 @@ commodo nibh.</p>
     <script type="text/javascript" src="scripts/gallery_button.js"></script>
     <!-- <script type="text/javascript" src="scripts/fixed_header.js"></script>
     <script type="text/javascript" src="scripts/activeLinkMenu.js"></script> -->
+    <script type="text/javascript" src="simplebox_util.js"></script>
+    <script type="text/javascript">
+        (function(){
+        var boxes=[],els,i,l;
+        if(document.querySelectorAll){
+        els=document.querySelectorAll('a[rel=simplebox]');	
+        Box.getStyles('simplebox_css','simplebox.css');
+        Box.getScripts('simplebox_js','simplebox.js',function(){
+        simplebox.init();
+        for(i=0,l=els.length;i<l;++i)
+        simplebox.start(els[i]);
+        simplebox.start('a[rel=simplebox_group]');			
+        });
+        }
+        })();
+    </script>
 </body>
 </html>

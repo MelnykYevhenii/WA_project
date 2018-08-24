@@ -75,6 +75,14 @@ li{
     padding: 20px;
 }
 
+#main__menu{
+    display: none;
+}
+
+/* @media(max-width: 400px){
+
+} */
+
 .homepage{
     width: 100%;
     display: flex;
@@ -330,6 +338,18 @@ li{
     opacity: 1;
 }
 
+@media(max-width: 590px){
+    .gallery{
+        flex-direction: column;
+        flex: 0 0
+    }
+
+    .gallery .photo{
+        height: auto;
+
+    }
+}
+
 .photo{
     position: relative;
     transition: opacity .5 easy-in;
@@ -355,21 +375,11 @@ li{
     display: block;
 }
 
-.project__description{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.3);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
 .container__contacts{
-    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -383,15 +393,25 @@ li{
 
 .contact__form{
     display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 #contactForm{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     width: 100%;
 }
 
-.send__name{
-    padding-right: 10px;
+/* .send__name{
+    padding-right: 5px;
 }
+
+.send__email{
+    padding-left: 5px;
+} */
 
 .input__form{
     width: 350px;
@@ -406,7 +426,6 @@ li{
     min-height: 1px;
 }
 
-
 @media(max-width: 755px){
     .input__form{
         width: auto;
@@ -418,13 +437,8 @@ li{
 
     .send__name{
         padding-bottom: 10px;
-        padding-left: 5px;
     }
     
-    .send__email{
-        padding-left: 5px;
-    }
-
     .contact__form__message{
         padding-left: 5px;
         padding-right: 5px;
