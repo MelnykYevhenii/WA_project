@@ -55,41 +55,92 @@
     </div>
 
     <div class="portfolio" >
-        <div class="container container__portfolio">
+        <div class="container__portfolio">
             <div class="about__container__text">
                 <h2 id="portfolio">Portfolio</h2>
                 <hr>
             </div>
 
             <div class="categories">
-                <ol class = "categories__type">
-                    <li>
-                        <a href="#" class="ALL portfolio__btn__photo">ALL</a>
-                    </li>
-                    <li>
-                        <a href="#" class="WEB__DESIGN portfolio__btn__photo">WEB DESIGN</a>
-                    </li>
-                    <li>
-                        <a href="#" class="PHOTOGRAPHY portfolio__btn__photo">PHOTOGRAPHY</a>
-                    </li>
-                    <li>
-                        <a href="#" class="PRODUCT__DESIGN portfolio__btn__photo">PRODUCT DESIGN</a>
-                    </li>
-                </ol>
+                <button class="ALL portfolio__btn__photo" data-group = "ALL web--design photo rod--design">ALL</button>
+                <button class="WEB__DESIGN portfolio__btn__photo" data-group = "web--design">WEB DESIGN</button>
+                <button class="PHOTOGRAPHY portfolio__btn__photo" data-group = "photo">PHOTOGRAPHY</button>
+                <button class="PRODUCT__DESIGN portfolio__btn__photo" data-group = "prod--design">PRODUCT DESIGN</button>
             </div>
 
-            <div class="photoblock">
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
-                <div class="photo"></div>
+            <div class="gallery">
+                <div class="photo" data-group = "ALL web--design">
+                    <img src="img/01-small.jpg" alt="phone" class="project__image">
+                        <div class="project__description">
+                            phone
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL prod--design">
+                        <img src="img/02-small.jpg" alt="mouse" class="project__image">
+                        <div class="project__description">
+                            mouse
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL  web--design">
+                        <img src="img/03-small.jpg" alt="3" class="project__image">
+                        <div class="project__description">
+                            03
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL web--design">
+                        <img src="img/04-small.jpg" alt="4" class="project__image">
+                        <div class="project__description">
+                            04
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL prod--design">
+                        <img src="img/05-small.jpg" alt="5" class="project__image">
+                        <div class="project__description">
+                            05
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL photo">
+                        <img src="img/06-small.jpg" alt="6" class="project__image">
+                        <div class="project__description">
+                            06
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL photo">
+                        <img src="img/07-small.jpg" alt="7" class="project__image">
+                        <div class="project__description">
+                            07
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL web--design">
+                        <img src="img/08-small.jpg" alt="8" class="project__image">
+                        <div class="project__description">
+                            08
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL prod--design">
+                        <img src="img/09-small.jpg" alt="9" class="project__image">
+                        <div class="project__description">
+                            09
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL photo">
+                        <img src="img/10-small.jpg" alt="10" class="project__image">
+                        <div class="project__description">
+                            10
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL photo">
+                        <img src="img/11-small.jpg" alt="11" class="project__image">
+                        <div class="project__description">
+                            11
+                        </div>
+                </div>
+                <div class="photo" data-group = "ALL web--design">
+                        <img src="img/12-small.jpg" alt="12" class="project__image">
+                        <div class="project__description">
+                            12
+                        </div>
+                </div>
             </div>
         </div>
     </div>
@@ -182,6 +233,7 @@
     <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="scripts/scrolling.js"></script>
     <script type="text/javascript" src="scripts/up_down.js"></script>
+    <script type="text/javascript" src="scripts/gallery_button.js"></script>
     <!-- <script type="text/javascript" src="scripts/fixed_header.js"></script>
     <script type="text/javascript" src="scripts/activeLinkMenu.js"></script> -->
 </body>
