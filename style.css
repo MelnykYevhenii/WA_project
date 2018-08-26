@@ -413,14 +413,6 @@ li{
     width: 100%;
 }
 
-/* .send__name{
-    padding-right: 5px;
-}
-
-.send__email{
-    padding-left: 5px;
-} */
-
 .input__form{
     width: 350px;
     height: 40px;
@@ -432,6 +424,10 @@ li{
     border: 1px solid transparent;
     border-radius: 5px;
     min-height: 1px;
+}
+
+.input__name{
+    margin-right: 5px;
 }
 
 @media(max-width: 755px){
@@ -500,6 +496,10 @@ li{
 @media(max-width: 590px){
     .social{
         flex-direction: column;
+    }
+
+    .input__name{
+        margin-left: 5px;
     }
 }
 
