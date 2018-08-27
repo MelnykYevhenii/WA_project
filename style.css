@@ -56,6 +56,10 @@ li{
         order: 2;
         width: 100%;
     }
+
+    .menu ul{
+        justify-content: center;
+    }
 }
 
 .menu ul{
@@ -68,6 +72,44 @@ li{
 .menu a{
     padding: 20px;
 }
+
+/* --------------------- mobile menu --------------------- */
+
+.mobile__menu li{
+    display: none;
+}
+
+@media(max-width: 400px){
+    .desktop__menu li{
+        display: none;
+    }
+
+    .mobile__menu li{
+        display: block;
+    }
+
+    .menu .mobile__menu{
+        flex-direction: row;
+        position: fixed;
+        flex-wrap: wrap;
+        top: 0;
+        color: #54d0dd;
+        background-color: #343b42;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo{
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 194px){
+    .logo{
+        display: none;
+    }
+}
+/* --------------------- mobile menu --------------------- */
 
 @media(max-width: 400px){
     .menu ul{
@@ -258,7 +300,7 @@ li{
 .portfolio_btn{
     display: inline-block;
     color: #54d0dd;
-    background-color: #414a52;;
+    background-color: #414a52;
     border: 0;
     padding: 14px 20px;
     margin: 0;
@@ -341,14 +383,27 @@ li{
     opacity: 1;
 }
 
+@media(max-width: 800px){
+    .gallery .photo{
+        height: auto;
+        flex: 0 0 50%;
+        padding-top: 25%;
+    }
+}
+
 @media(max-width: 590px){
     .gallery{
         flex-direction: column;
-        flex: 0 0
     }
 
     .gallery .photo{
-        height: auto;
+        width: auto;
+        flex: 0 0 100%;
+        padding-top: 50%;
+    }
+
+    .gallery .photoHidden{
+        flex-basis: auto;
     }
 }
 
