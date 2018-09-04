@@ -421,7 +421,7 @@ li{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 10px; /* Отступы между картинками */
+    padding: 10px; /* Отступы между картинками. */
 }
 
 @media(max-width: 800px){
