@@ -450,6 +450,7 @@ li{
 
     .gallery .photoHidden{
         height: auto;
+        position: absolute;
     }
 }
 
